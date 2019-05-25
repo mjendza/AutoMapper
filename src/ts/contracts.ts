@@ -370,13 +370,13 @@
      */
     export interface IProfile {
         /** Profile name */
-        profileName: string| undefined;
+        profileName: string;
 
         /** Naming convention for source members */
-        sourceMemberNamingConvention: INamingConvention| undefined;
+        sourceMemberNamingConvention: INamingConvention;
 
         /** Naming convention for destination members */
-        destinationMemberNamingConvention: INamingConvention| undefined;
+        destinationMemberNamingConvention: INamingConvention;
 
         /**
          * Implement this method in a derived class and call the CreateMap method to associate that map with this profile.

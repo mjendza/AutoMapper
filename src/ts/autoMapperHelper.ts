@@ -221,7 +221,7 @@ export class AutoMapperHelper {
         // want to prevent the call to be error prone when the end user uses the '(opts)=> opts.sourceObject.sourcePropertyName'
         // syntax. We don't actually have a source object when creating a mapping; therefore, we 'stub' a source object for the
         // function call.
-        let sourceObject: any = {};
+        const sourceObject: any = {};
         sourceObject[sourceProperty] = {};
 
         let condition: (sourceObject: any) => boolean;

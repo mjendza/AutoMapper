@@ -1,5 +1,5 @@
 import {AutoMapper} from '../../../src/ts/autoMapper';
-import {IMapping, IMemberConfigurationOptions, ISourceMemberConfigurationOptions, ISourceProperty} from '../../../src/ts/contracts';
+import {IDestinationProperty, IMapping, IMemberConfigurationOptions, ISourceMemberConfigurationOptions, ISourceProperty} from '../../../src/ts/contracts';
 import {DestinationTransformationType} from '../../../src/ts/autoMapperEnumerations';
 import {expect} from 'chai';
 
@@ -13,7 +13,7 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         var fromKey = 'should be able to use ';
         var toKey = 'forSourceMember to ignore a property' + postfix;
 
-        var ignoreFunc = (opts: ISourceMemberConfigurationOptions) => opts.ignore();
+        var ignoreFunc = (opts: ISourceMemberConfigurationOptions):void => opts.ignore();
 
         // act
         automapper
@@ -23,17 +23,21 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         // assert
         var properties = TestHelper.assertAndGetProperty(fromKey, toKey);
         expect(properties.length).to.be.equal(1);
-        expect(properties[0]).to.be.deep.equals({
+        expect(properties[0]).to.be.deep.equals(<ISourceProperty>{
             name: 'prop',
             destinationPropertyName: 'prop',
+            sourcePropertyName: 'prop',
             parent: null,
             level: 0,
             children: [],
             destination: {
                 name: 'prop',
+                destinationPropertyName: 'prop',
+                sourcePropertyName: 'prop',
+                conditionFunction: undefined,
                 parent: null,
                 level: 0,
-                child: null,
+                child: undefined,
                 transformations: [{transformationType: DestinationTransformationType.SourceMemberOptions, sourceMemberConfigurationOptionsFunc: ignoreFunc}],
                 sourceMapping: true,
                 ignore: true
@@ -46,7 +50,7 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         var fromKey = 'should be able to custom map a source ';
         var toKey = 'property using the forSourceMember function' + postfix;
 
-        var customMappingFunc = (opts: ISourceMemberConfigurationOptions) => 'Yeah!';
+        var customMappingFunc = (opts: ISourceMemberConfigurationOptions):string => 'Yeah!';
 
         // act
         automapper
@@ -56,17 +60,21 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         // assert
         var properties = TestHelper.assertAndGetProperty(fromKey, toKey);
         expect(properties.length).to.be.equal(1);
-        expect(properties[0]).to.be.deep.equals({
+        expect(properties[0]).to.be.deep.equals(<ISourceProperty>{
             name: 'prop',
             destinationPropertyName: 'prop',
+            sourcePropertyName: 'prop',
             parent: null,
             level: 0,
             children: [],
             destination: {
                 name: 'prop',
+                destinationPropertyName: 'prop',
+                sourcePropertyName: 'prop',
+                conditionFunction: undefined,
                 parent: null,
                 level: 0,
-                child: null,
+                child: undefined,
                 transformations: [{transformationType: DestinationTransformationType.SourceMemberOptions, sourceMemberConfigurationOptionsFunc: customMappingFunc}],
                 sourceMapping: true,
                 ignore: false
@@ -79,8 +87,8 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         var fromKey = 'should be able to ignore a source property already specified ';
         var toKey = '(by forMember) using the forSourceMember function' + postfix;
 
-        var mapFromFunc = (opts: IMemberConfigurationOptions) => opts.mapFrom('prop2');
-        var ignoreFunc = (opts: ISourceMemberConfigurationOptions) => opts.ignore();
+        var mapFromFunc = (opts: IMemberConfigurationOptions): void => opts.mapFrom('prop2');
+        var ignoreFunc = (opts: ISourceMemberConfigurationOptions): void => opts.ignore();
 
         // act
         automapper
@@ -91,17 +99,21 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         // assert
         var properties = TestHelper.assertAndGetProperty(fromKey, toKey);
         expect(properties.length).to.be.equal(1);
-        expect(properties[0]).to.be.deep.equals({
+        expect(properties[0]).to.be.deep.equals(<ISourceProperty>{
             name: 'prop2',
             destinationPropertyName: 'prop1',
+            sourcePropertyName: 'prop2',
             parent: null,
             level: 0,
             children: [],
             destination: {
                 name: 'prop1',
+                destinationPropertyName: 'prop1',
+                sourcePropertyName: 'prop2',
                 parent: null,
                 level: 0,
-                child: null,
+                child: undefined,
+                conditionFunction: undefined,
                 transformations: [
                     {transformationType: DestinationTransformationType.MemberOptions, memberConfigurationOptionsFunc: mapFromFunc},
                     {transformationType: DestinationTransformationType.SourceMemberOptions, sourceMemberConfigurationOptionsFunc: ignoreFunc}
@@ -117,8 +129,8 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         var fromKey = 'should be able to use forSourceMember to ignore a property ';
         var toKey = 'and use forMember.mapFrom to write to a custom destination at the same time' + postfix;
 
-        var mapFromFunc = (opts: IMemberConfigurationOptions) => opts.mapFrom('prop2');
-        var ignoreFunc = (opts: ISourceMemberConfigurationOptions) => opts.ignore();
+        var mapFromFunc = (opts: IMemberConfigurationOptions): void => opts.mapFrom('prop2');
+        var ignoreFunc = (opts: ISourceMemberConfigurationOptions): void => opts.ignore();
 
         // act
         automapper
@@ -129,33 +141,41 @@ describe('AutoMapper.createMap.forSourceMember', () => {
         // assert
         var properties = TestHelper.assertAndGetProperty(fromKey, toKey);
         expect(properties.length).to.be.equal(2);
-        expect(properties[0]).to.be.deep.equals({
+        expect(properties[0]).to.be.deep.equals(<ISourceProperty>{
             name: 'prop1',
             destinationPropertyName: 'prop1',
+            sourcePropertyName: 'prop1',
             parent: null,
             level: 0,
             children: [],
-            destination: {
+            destination: <IDestinationProperty>{
                 name: 'prop1',
+                destinationPropertyName: 'prop1',
+                sourcePropertyName: 'prop1',
+                conditionFunction: undefined,
                 parent: null,
                 level: 0,
-                child: null,
+                child: undefined,
                 transformations: [{transformationType: DestinationTransformationType.SourceMemberOptions, sourceMemberConfigurationOptionsFunc: ignoreFunc}],
                 ignore: true,
                 sourceMapping: true
             }
         });
-        expect(properties[1]).to.be.deep.equal({
+        expect(properties[1]).to.be.deep.equal(<ISourceProperty>{
             name: 'prop2',
             destinationPropertyName: 'prop1',
+            sourcePropertyName: 'prop2',
             parent: null,
             level: 0,
             children: [],
-            destination: {
+            destination: <IDestinationProperty>{
                 name: 'prop1',
+                destinationPropertyName: 'prop1',
+                sourcePropertyName: 'prop2',
+                conditionFunction: undefined,
                 parent: null,
                 level: 0,
-                child: null,
+                child: undefined,
                 transformations: [{transformationType: DestinationTransformationType.MemberOptions, memberConfigurationOptionsFunc: mapFromFunc}],
                 ignore: false,
                 sourceMapping: false
@@ -165,28 +185,15 @@ describe('AutoMapper.createMap.forSourceMember', () => {
 
     it('should fail when forSourceMember is used with anything else than a function', () => {
         // arrange
-        var caught = false;
-
         var fromKey = 'should be able to use ';
         var toKey = 'forSourceMember to ignore a property' + postfix;
 
-        var ignoreFunc = (opts: ISourceMemberConfigurationOptions) => opts.ignore();
+        var ignoreFunc = (opts: ISourceMemberConfigurationOptions):void => opts.ignore();
 
-        try {
-            // act
-            automapper
+            expect(() => automapper
                 .createMap(fromKey, toKey)
-                .forSourceMember('prop', <any>12);
-        } catch (e) {
-            // assert
-            caught = true;
-            expect(e.message).to.be.equal('Configuration of forSourceMember has to be a function with one (sync) or two (async) options parameters.');
-        }
-
-        if (!caught) {
-            // assert
-            //expect(null).to.be.fail('Using anything else than a function with forSourceMember should result in an error.');
-        }
+                .forSourceMember('prop', <any>12))
+                .to.be.throw('Configuration of forSourceMember has to be a function with one (sync) or two (async) options parameters.');
     });
 });
 

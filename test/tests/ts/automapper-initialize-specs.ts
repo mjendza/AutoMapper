@@ -13,8 +13,8 @@ import automapper from '../../../src/ts/autoMapper';
 import {expect} from 'chai';
 
 class PascalCaseToCamelCaseMappingProfile extends Profile {
-    public sourceMemberNamingConvention: INamingConvention | undefined;
-    public destinationMemberNamingConvention: INamingConvention | undefined;
+    public sourceMemberNamingConvention!: INamingConvention;
+    public destinationMemberNamingConvention!: INamingConvention;
 
     public profileName = 'PascalCaseToCamelCase';
 
@@ -27,8 +27,8 @@ class PascalCaseToCamelCaseMappingProfile extends Profile {
 }
 
 class ForAllMembersMappingProfile extends Profile {
-    public sourceMemberNamingConvention: INamingConvention | undefined;
-    public destinationMemberNamingConvention: INamingConvention | undefined;
+    public sourceMemberNamingConvention!: INamingConvention;
+    public destinationMemberNamingConvention!: INamingConvention;
 
     public profileName = 'ForAllMembers';
 
@@ -57,8 +57,8 @@ class ForAllMembersMappingProfile extends Profile {
 }
 
 class ConvertUsingMappingProfile extends Profile {
-    public sourceMemberNamingConvention: INamingConvention | undefined;
-    public destinationMemberNamingConvention: INamingConvention | undefined;
+    public sourceMemberNamingConvention!: INamingConvention;
+    public destinationMemberNamingConvention!: INamingConvention;
 
     public profileName = 'ConvertUsing';
 
@@ -86,8 +86,8 @@ class ConvertUsingMappingProfile extends Profile {
 }
 
 class CamelCaseToPascalCaseMappingProfile extends Profile {
-    public sourceMemberNamingConvention: INamingConvention | undefined;
-    public destinationMemberNamingConvention: INamingConvention | undefined;
+    public sourceMemberNamingConvention!: INamingConvention;
+    public destinationMemberNamingConvention!: INamingConvention;
 
     public profileName = 'CamelCaseToPascalCase';
 

@@ -1,9 +1,9 @@
 import automapper, {AutoMapper} from '../../../src/ts/autoMapper';
-import {IMapping, IMemberConfigurationOptions, IResolutionContext, ISourceMemberConfigurationOptions, ISourceProperty} from '../../../src/ts/contracts';
-import {DestinationTransformationType} from '../../../src/ts/autoMapperEnumerations';
+import {IMemberConfigurationOptions, IResolutionContext, ISourceMemberConfigurationOptions} from '../../../src/ts/contracts';
 import {expect} from 'chai';
 import {TypeConverter} from '../../../src/ts/typeConverter';
-import {Mock, It, Times} from 'typemoq';
+import {It, Mock, Times} from 'typemoq';
+
 describe('AutoMapper', () => {
     let postfix = ' [0ef5ef45-4f21-47c4-a86f-48fb852e6897]';
 
@@ -266,12 +266,12 @@ describe('AutoMapper', () => {
 
     it('should be able to use forMember to do custom mapping using lambda function', () => {
         //arrange
-        var objA = {prop1: 'From A', prop2: 'From A too'};
+        const objA = {prop1: 'From A', prop2: 'From A too'};
 
-        var fromKey = '{7AC4134B-ECC1-464B-B144-5B9D8F5B578E}';
-        var toKey = '{2BDE907C-1CE6-4CC5-A601-9A94CC665737}';
+        const fromKey = '{7AC4134B-ECC1-464B-B144-5B9D8F5B578E}';
+        const toKey = '{2BDE907C-1CE6-4CC5-A601-9A94CC665737}';
 
-        const mapFromNullable = (opts: IMemberConfigurationOptions, field: string) => {
+        const mapFromNullable = (opts: IMemberConfigurationOptions, field: string): string => {
             if (opts.sourceObject[field]) {
                 return opts.sourceObject[field];
             }
@@ -283,7 +283,7 @@ describe('AutoMapper', () => {
             .forMember('prop', (opts: IMemberConfigurationOptions) => mapFromNullable(opts, 'prop2'));
 
         // act
-        var objB = automapper.map(fromKey, toKey, objA);
+        const objB = automapper.map(fromKey, toKey, objA);
 
         // assert
         expect(objB).to.be.deep.equal({prop1: objA.prop1, prop: objA.prop2});
@@ -291,15 +291,15 @@ describe('AutoMapper', () => {
 
     it('should use forAllMembers function for each mapped destination property when specified', () => {
         // arrange
-        var objA = {prop1: 'From A', prop2: 'From A too'};
+        const objA = {prop1: 'From A', prop2: 'From A too'};
 
-        var fromKey = '{C4056539-FA86-4398-A10B-C41D3A791F26}';
-        var toKey = '{01C64E8D-CDB5-4307-9011-0C7F1E70D115}';
+        const fromKey = '{C4056539-FA86-4398-A10B-C41D3A791F26}';
+        const toKey = '{01C64E8D-CDB5-4307-9011-0C7F1E70D115}';
         const forAllMembersFunc = (destinationObject: any, destinationProperty: string, value: any): void => {
-                destinationObject[destinationProperty] = value;
+            destinationObject[destinationProperty] = value;
         };
-        var mockForAllMembers = Mock.ofInstance(forAllMembersFunc);
-        mockForAllMembers.setup(x => x(It.isAny(), It.isAny(), It.isAny())).returns( (destinationObject: any, destinationProperty: string, value: any) => {
+        const mockForAllMembers = Mock.ofInstance(forAllMembersFunc);
+        mockForAllMembers.setup(x => x(It.isAny(), It.isAny(), It.isAny())).returns((destinationObject: any, destinationProperty: string, value: any) => {
             return forAllMembersFunc(destinationObject, destinationProperty, value);
         });
 
@@ -308,11 +308,12 @@ describe('AutoMapper', () => {
             .forAllMembers(mockForAllMembers.object);
 
         // act
-        var objB = automapper.map(fromKey, toKey, objA);
+        const objB = automapper.map(fromKey, toKey, objA);
 
         // assert
+        const times = Object.keys(objB).length;
         //mockForAllMembers.verify(x => x(It.isAny(), It.isAny(), It.isAny()), Times.atLeastOnce());
-        mockForAllMembers.verify(x => x(It.isAny(), It.isAny(), It.isAny()), Times.exactly(Object.keys(objB).length));
+        mockForAllMembers.verify(x => x(It.isAny(), It.isAny(), It.isAny()), Times.exactly(times));
     });
 
     it('should be able to use forMember with a constant value', () => {

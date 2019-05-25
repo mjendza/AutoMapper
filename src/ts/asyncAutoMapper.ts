@@ -134,8 +134,11 @@ export class AsyncAutoMapper extends AutoMapperBase {
 
         var waitForCallbackToSend = (): void => {
             if (callbacksToGo === 0) {
-                // @ts-ignore
-                callback(destinationObject);
+                if (!!callback) {
+                    callback(destinationObject);
+                } else {
+                    throw new Error('callback is undefined');
+                }
             } else {
                 setTimeout((): void => {
                     waitForCallbackToSend();

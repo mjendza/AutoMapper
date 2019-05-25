@@ -204,3 +204,4 @@ _Pvt_Extensions/
 ModelManifest.xml
 */dist/**/*.*
 dist
+/.nyc_output

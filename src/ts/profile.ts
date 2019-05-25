@@ -6,13 +6,13 @@ import {AutoMapper} from './autoMapper';
 
 export class Profile implements IProfile {
     /** Profile name */
-    public profileName: string | undefined;
+    public profileName!: string;
 
     /** Naming convention for source members */
-    public sourceMemberNamingConvention: INamingConvention | undefined;
+    public sourceMemberNamingConvention!: INamingConvention;
 
     /** Naming convention for destination members */
-    public destinationMemberNamingConvention: INamingConvention | undefined;
+    public destinationMemberNamingConvention!: INamingConvention;
 
     /**
      * Implement this method in a derived class and call the CreateMap method to associate that map with this profile.

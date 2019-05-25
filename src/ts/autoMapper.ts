@@ -72,7 +72,7 @@ export class AutoMapper extends AutoMapperBase {
             addProfile: (profile: IProfile): void => {
                 profile.configure();
 
-                // @ts-ignore
+
                 this._profiles ? this._profiles[profile.profileName] = profile : undefined;
             },
             createMap: function (sourceKey: string, destinationKey: string): IFluentFunc {
@@ -374,8 +374,7 @@ export class AutoMapper extends AutoMapperBase {
                 options.intermediatePropertyValue = transformation.constant;
                 return true;
             case DestinationTransformationType.MemberOptions: {
-                // @ts-ignore
-                let result = transformation.memberConfigurationOptionsFunc(options);
+                let result = transformation.memberConfigurationOptionsFunc ? transformation.memberConfigurationOptionsFunc(options) : undefined;
                 if (typeof result !== 'undefined') {
                     options.intermediatePropertyValue = result;
                 } else if (!options.sourceObject) {
@@ -384,8 +383,7 @@ export class AutoMapper extends AutoMapperBase {
                 return true;
             }
             case DestinationTransformationType.SourceMemberOptions: {
-                // @ts-ignore
-                let result = transformation.sourceMemberConfigurationOptionsFunc(<ISMCO>options);
+                let result = transformation.sourceMemberConfigurationOptionsFunc ? transformation.sourceMemberConfigurationOptionsFunc(<ISMCO>options) : undefined;
                 if (typeof result !== 'undefined') {
                     options.intermediatePropertyValue = result;
                 } else if (!options.sourceObject) {

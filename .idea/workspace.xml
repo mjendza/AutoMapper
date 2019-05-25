@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2082ae-4462-4815-8580-894c2753d71e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/autoMapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/autoMapper.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,13 +17,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts">
+        <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3374">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#52#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="444">
+              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -33,32 +28,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1197">
-              <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#208#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="28" />
+            <state relative-caret-position="1822">
+              <caret line="328" column="36" selection-start-line="328" selection-start-column="36" selection-end-line="328" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -66,8 +37,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="307" column="53" lean-forward="true" selection-start-line="307" selection-start-column="53" selection-end-line="307" selection-end-column="53" />
+            <state relative-caret-position="381">
+              <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
               <folding>
                 <element signature="e#0#66#0" expanded="true" />
               </folding>
@@ -76,10 +47,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+              <folding>
+                <element signature="e#0#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ts/autoMapper.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+            <state relative-caret-position="205">
+              <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
               <folding>
                 <element signature="e#24#410#0" expanded="true" />
               </folding>
@@ -88,48 +71,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+        <entry file="file://$PROJECT_DIR$/src/ts/autoMapperHelper.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4275">
-              <caret line="330" column="18" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+            <state relative-caret-position="294">
+              <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
               <folding>
-                <element signature="e#0#213#0" expanded="true" />
-                <element signature="n#PascalCaseToCamelCaseMappingProfile#0" />
-                <element signature="n#ForAllMembersMappingProfile#0" />
-                <element signature="n#ConvertUsingMappingProfile#0" />
-                <element signature="n#CamelCaseToPascalCaseMappingProfile#0" />
-                <element signature="n#ValidatedAgeMappingProfile#0" />
-                <element signature="n#ValidatedAgeMappingProfile2#0" />
-                <element signature="n#Person#0" />
-                <element signature="n#BeerBuyingYoungster#0" />
+                <element signature="e#1#109#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" selection-start-column="7" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -147,6 +95,7 @@
       <find>toEqual</find>
       <find>..to.be.equal</find>
       <find>forAllMembers</find>
+      <find>ts-ig</find>
     </findStrings>
     <replaceStrings>
       <replace>.to.be.deep.equals</replace>
@@ -169,28 +118,30 @@
         <option value="$PROJECT_DIR$/src/ts/AutoMapperValidator.ts" />
         <option value="$PROJECT_DIR$/test/typings/jasmine-utils.d.ts" />
         <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts" />
-        <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts" />
-        <option value="$PROJECT_DIR$/src/ts/contracts.ts" />
         <option value="$PROJECT_DIR$/src/ts/Profile.ts" />
         <option value="$PROJECT_DIR$/src/ts/AutoMapperBase.ts" />
         <option value="$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts" />
         <option value="$PROJECT_DIR$/src/ts/AsyncAutoMapper.ts" />
         <option value="$PROJECT_DIR$/.travis.yml" />
         <option value="$PROJECT_DIR$/samples/ts/configuration.ts" />
-        <option value="$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts" />
         <option value="$PROJECT_DIR$/src/ts/AutoMapperHelper.ts" />
         <option value="$PROJECT_DIR$/src/ts/AutoMapper.ts" />
-        <option value="$PROJECT_DIR$/src/ts/asyncAutoMapper.ts" />
-        <option value="$PROJECT_DIR$/src/ts/autoMapper.ts" />
-        <option value="$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts" />
         <option value="$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts" />
         <option value="$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/asyncAutoMapper.ts" />
+        <option value="$PROJECT_DIR$/src/ts/autoMapperHelper.ts" />
+        <option value="$PROJECT_DIR$/src/ts/contracts.ts" />
+        <option value="$PROJECT_DIR$/src/ts/profile.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/autoMapper.ts" />
         <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -211,20 +162,7 @@
             <path>
               <item name="AutoMapper.TS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AutoMapper.TS" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoMapper.TS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoMapper.TS" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AutoMapper.TS" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AutoMapper.TS" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="ts" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -260,40 +198,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Mocha.test\tests\ts\automapper-createmap-specs.ts">
-    <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember in combination with a constant value" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts</test-file>
-      <test-names>
-        <name value="AutoMapper (asynchronous mapping)" />
-        <name value="should be able to map asynchronous using forMember in combination with a constant value" />
-      </test-names>
+  <component name="RunManager" selected="Mocha.AutoMapper.should use forAllMembers function for each mapped destination property when specified">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts</test-file>
-      <test-names>
-        <name value="AutoMapper (asynchronous mapping)" />
-        <name value="should be able to map asynchronous using forMember" />
-      </test-names>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
-    <configuration name="AutoMapper.should fail when auto mapping a property which does not exist on source" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+    <configuration name="AutoMapper" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
       <node-interpreter>project</node-interpreter>
       <node-options />
       <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
@@ -301,11 +227,26 @@
       <pass-parent-env>true</pass-parent-env>
       <ui>bdd</ui>
       <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST</test-kind>
-      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts</test-file>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts</test-file>
       <test-names>
         <name value="AutoMapper" />
-        <name value="should fail when auto mapping a property which does not exist on source" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AutoMapper.should be able to use forMember to do custom mapping using lambda function" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST</test-kind>
+      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts</test-file>
+      <test-names>
+        <name value="AutoMapper" />
+        <name value="should be able to use forMember to do custom mapping using lambda function" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -325,25 +266,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="test\tests\ts\automapper-createmap-specs.ts" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
-      <working-directory>$PROJECT_DIR$</working-directory>
-      <pass-parent-env>true</pass-parent-env>
-      <ui>bdd</ui>
-      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
-      <test-kind>TEST_FILE</test-kind>
-      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts</test-file>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Mocha.test\tests\ts\automapper-createmap-specs.ts" />
         <item itemvalue="Mocha.AutoMapper.should use forAllMembers function for each mapped destination property when specified" />
-        <item itemvalue="Mocha.AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember in combination with a constant value" />
-        <item itemvalue="Mocha.AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember" />
-        <item itemvalue="Mocha.AutoMapper.should fail when auto mapping a property which does not exist on source" />
+        <item itemvalue="Mocha.AutoMapper" />
+        <item itemvalue="npm.test" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="Mocha.AutoMapper.should be able to use forMember to do custom mapping using lambda function" />
       </list>
     </recent_temporary>
   </component>
@@ -357,44 +286,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558505559807</updated>
-      <workItem from="1558505561144" duration="30632000" />
+      <workItem from="1558505561144" duration="36210000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AutoMapper_should_fail_when_auto_mapping_a_property_which_does_not_exist_on_source - 2019.05.25 at 20h 26m 27s.xml">
-      <configuration name="AutoMapper.should fail when auto mapping a property which does not exist on source" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_tests_ts_automapper-initialize-specs_ts - 2019.05.26 at 15h 18m 05s.xml">
+      <configuration name="test\tests\ts\automapper-initialize-specs.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_(asynchronous_mapping)_should_be_able_to_map_asynchronous_using_forMember - 2019.05.25 at 20h 31m 43s.xml">
-      <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AutoMapper_initialize - 2019.05.26 at 15h 18m 58s.xml">
+      <configuration name="AutoMapper.initialize" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_(asynchronous_mapping)_should_be_able_to_map_asynchronous_using_forMember_in_combination_with_a_constant_value - 2019.05.25 at 20h 32m 13s.xml">
-      <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember in combination with a constant value" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="test_tests_ts_automapper-map-specs_ts - 2019.05.26 at 15h 19m 25s.xml">
+      <configuration name="test\tests\ts\automapper-map-specs.ts" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_(asynchronous_mapping)_should_be_able_to_map_asynchronous_using_forMember_in_combination_with_a_constant_value - 2019.05.25 at 20h 34m 33s.xml">
-      <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember in combination with a constant value" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AutoMapper_-_Currying_support_should_be_able_to_use_currying_when_calling_mapAsync - 2019.05.26 at 15h 27m 58s.xml">
+      <configuration name="AutoMapper - Currying support.should be able to use currying when calling mapAsync" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_(asynchronous_mapping)_should_be_able_to_map_asynchronous_using_forMember_in_combination_with_a_constant_value - 2019.05.25 at 20h 41m 09s.xml">
-      <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember in combination with a constant value" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AutoMapper_should_be_able_to_use_forMember_to_do_custom_mapping_using_lambda_function - 2019.05.26 at 15h 30m 39s.xml">
+      <configuration name="AutoMapper.should be able to use forMember to do custom mapping using lambda function" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_(asynchronous_mapping)_should_be_able_to_map_asynchronous_using_forMember_in_combination_with_a_constant_value - 2019.05.25 at 20h 41m 24s.xml">
-      <configuration name="AutoMapper (asynchronous mapping).should be able to map asynchronous using forMember in combination with a constant value" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AutoMapper_should_be_able_to_use_forMember_to_do_custom_mapping_using_lambda_function - 2019.05.26 at 15h 32m 30s.xml">
+      <configuration name="AutoMapper.should be able to use forMember to do custom mapping using lambda function" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="test_tests_ts_automapper-createmap-specs_ts - 2019.05.25 at 21h 08m 53s.xml">
-      <configuration name="test\tests\ts\automapper-createmap-specs.ts" configurationId="mocha-javascript-test-runner" />
+    <history-entry file="AutoMapper - 2019.05.26 at 15h 34m 44s.xml">
+      <configuration name="AutoMapper" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_should_use_forAllMembers_function_for_each_mapped_destination_property_when_specified - 2019.05.25 at 21h 31m 30s.xml">
+    <history-entry file="AutoMapper_should_use_forAllMembers_function_for_each_mapped_destination_property_when_specified - 2019.05.26 at 15h 36m 53s.xml">
       <configuration name="AutoMapper.should use forAllMembers function for each mapped destination property when specified" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_should_use_forAllMembers_function_for_each_mapped_destination_property_when_specified - 2019.05.25 at 21h 32m 25s.xml">
+    <history-entry file="AutoMapper_should_use_forAllMembers_function_for_each_mapped_destination_property_when_specified - 2019.05.26 at 15h 37m 17s.xml">
       <configuration name="AutoMapper.should use forAllMembers function for each mapped destination property when specified" configurationId="mocha-javascript-test-runner" />
     </history-entry>
-    <history-entry file="AutoMapper_should_use_forAllMembers_function_for_each_mapped_destination_property_when_specified - 2019.05.25 at 21h 33m 03s.xml">
+    <history-entry file="AutoMapper_should_use_forAllMembers_function_for_each_mapped_destination_property_when_specified - 2019.05.26 at 15h 37m 34s.xml">
       <configuration name="AutoMapper.should use forAllMembers function for each mapped destination property when specified" configurationId="mocha-javascript-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30632000" />
+    <option name="totallyTimeSpent" value="36210000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1804" height="982" extended-state="6" />
@@ -434,7 +363,54 @@
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ts/autoMapperHelper.ts</url>
+          <line>251</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ts/profile.ts</url>
+          <line>42</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ts/autoMapper.ts</url>
+          <line>75</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts</url>
+          <line>109</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts</url>
+          <line>111</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts</url>
+          <line>313</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts</url>
+          <line>298</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint enabled="true" type="javascript-exception">
+          <properties />
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -558,16 +534,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ts/profile.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-          <folding>
-            <element signature="e#85#168#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ts/autoMapperBase.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -659,38 +625,11 @@
         <state relative-caret-position="-1223" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ts/autoMapperHelper.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-294">
-          <caret line="61" column="90" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="90" />
-          <folding>
-            <element signature="e#1#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/autoMapper.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ts/contracts.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="303" column="21" selection-start-line="303" selection-start-column="21" selection-end-line="303" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/autoMapper.js">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ts/asyncAutoMapper.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="48" column="11" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tools/typings/tsd.d.ts">
       <provider selected="true" editor-type-id="text-editor" />
@@ -712,16 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1197">
-          <caret line="63" column="12" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -732,28 +661,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts">
+    <entry file="file://$PROJECT_DIR$/src/ts/asyncAutoMapper.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="28" />
+        <state relative-caret-position="123">
+          <caret line="140" column="17" selection-start-line="140" selection-start-column="17" selection-end-line="140" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#301#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts">
+    <entry file="file://$PROJECT_DIR$/src/ts/profile.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="55" selection-start-line="3" selection-start-column="55" selection-end-line="3" selection-end-column="55" />
+        <state relative-caret-position="684">
+          <caret line="36" column="42" selection-start-line="36" selection-start-column="42" selection-end-line="36" selection-end-column="42" />
+          <folding>
+            <element signature="e#85#168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-517">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/contracts.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-346">
+          <caret line="378" column="60" selection-start-line="378" selection-start-column="60" selection-end-line="378" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4275">
-          <caret line="330" column="18" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+        <state relative-caret-position="91">
+          <caret line="141" column="22" selection-start-line="141" selection-start-column="22" selection-end-line="141" selection-end-column="22" />
           <folding>
             <element signature="e#0#213#0" expanded="true" />
-            <element signature="n#PascalCaseToCamelCaseMappingProfile#0" />
-            <element signature="n#ForAllMembersMappingProfile#0" />
             <element signature="n#ConvertUsingMappingProfile#0" />
             <element signature="n#CamelCaseToPascalCaseMappingProfile#0" />
             <element signature="n#ValidatedAgeMappingProfile#0" />
@@ -771,10 +724,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/autoMapperHelper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="83" column="33" selection-start-line="83" selection-start-column="33" selection-end-line="83" selection-end-column="33" />
+          <folding>
+            <element signature="e#1#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1822">
+          <caret line="328" column="36" selection-start-line="328" selection-start-column="36" selection-end-line="328" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ts/autoMapper.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="163" column="21" selection-start-line="163" selection-start-column="21" selection-end-line="163" selection-end-column="21" />
+        <state relative-caret-position="205">
+          <caret line="98" column="23" selection-start-line="98" selection-start-column="23" selection-end-line="98" selection-end-column="23" />
           <folding>
             <element signature="e#24#410#0" expanded="true" />
           </folding>
@@ -783,15 +753,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="444">
           <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="109" column="47" selection-start-line="109" selection-start-column="47" selection-end-line="109" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#122#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="307" column="53" lean-forward="true" selection-start-line="307" selection-start-column="53" selection-end-line="307" selection-end-column="53" />
+        <state relative-caret-position="381">
+          <caret line="310" column="13" selection-start-line="310" selection-start-column="13" selection-end-line="310" selection-end-column="13" />
           <folding>
             <element signature="e#0#66#0" expanded="true" />
           </folding>

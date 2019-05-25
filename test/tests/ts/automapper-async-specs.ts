@@ -117,7 +117,7 @@ describe('AutoMapper (asynchronous mapping)', () => {
             .forMember('prop', (opts: IMemberConfigurationOptions) => {
                 return opts.intermediatePropertyValue + ' (sync)';
             });
-        expect(automapper.map(fromKey, toKey, objFrom)).to.throw('Impossible to use asynchronous mapping using automapper.map(); use automapper.mapAsync() instead.');
+        expect(() => automapper.map(fromKey, toKey, objFrom)).to.throw('Impossible to use asynchronous mapping using automapper.map(); use automapper.mapAsync() instead.');
     });
 
     it('should be able to map asynchronous using forSourceMember', (done: () => void) => {
