@@ -2,7 +2,7 @@
  * Converts source type to destination type instead of normal member mapping
  */
 import {ICreateMapFluentFunctions, INamingConvention, IProfile} from './contracts';
-import {AutoMapper} from './AutoMapper';
+import {AutoMapper} from './autoMapper';
 
 export class Profile implements IProfile {
     /** Profile name */

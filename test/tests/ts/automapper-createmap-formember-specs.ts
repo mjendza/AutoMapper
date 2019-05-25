@@ -6,9 +6,9 @@ import {
     ISourceMemberConfigurationOptions,
     ISourceProperty
 } from '../../../src/ts/contracts';
-import {AutoMapper} from '../../../src/ts/AutoMapper';
+import {AutoMapper} from '../../../src/ts/autoMapper';
 import {expect} from 'chai';
-import {DestinationTransformationType} from '../../../src/ts/AutoMapperEnumerations';
+import {DestinationTransformationType} from '../../../src/ts/autoMapperEnumerations';
 
 const automapper = AutoMapper.getInstance();
 describe('AutoMapper.createMap.forMember', () => {

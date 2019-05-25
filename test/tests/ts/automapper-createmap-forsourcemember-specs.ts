@@ -1,6 +1,6 @@
-import {AutoMapper} from '../../../src/ts/AutoMapper';
+import {AutoMapper} from '../../../src/ts/autoMapper';
 import {IMapping, IMemberConfigurationOptions, ISourceMemberConfigurationOptions, ISourceProperty} from '../../../src/ts/contracts';
-import {DestinationTransformationType} from '../../../src/ts/AutoMapperEnumerations';
+import {DestinationTransformationType} from '../../../src/ts/autoMapperEnumerations';
 import {expect} from 'chai';
 
 const automapper = AutoMapper.getInstance();

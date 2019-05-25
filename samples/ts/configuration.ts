@@ -1,7 +1,7 @@
 ﻿import {PascalCaseNamingConvention} from '../../src/ts/naming-conventions/PascalCaseNamingConvention';
 import {CamelCaseNamingConvention} from '../../src/ts/naming-conventions/CamelCaseNamingConvention';
 import {IConfiguration, IMemberConfigurationOptions, IProfile} from '../../src/ts/contracts';
-import automapper, {AutoMapper} from '../../src/ts/AutoMapper';
+import automapper, {AutoMapper} from '../../src/ts/autoMapper';
 
 export class Base {
     public apiJsonResult: any;

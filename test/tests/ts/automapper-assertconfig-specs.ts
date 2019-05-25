@@ -1,5 +1,5 @@
-import {AutoMapper} from '../../../src/ts/AutoMapper';
-import {AutoMapperHelper} from '../../../src/ts/AutoMapperHelper';
+import {AutoMapper} from '../../../src/ts/autoMapper';
+import {AutoMapperHelper} from '../../../src/ts/autoMapperHelper';
 import * as chai from 'chai';
 import { expect } from 'chai';
 

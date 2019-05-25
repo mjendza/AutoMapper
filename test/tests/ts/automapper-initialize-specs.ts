@@ -8,8 +8,8 @@ import {
 } from '../../../src/ts/contracts';
 import {PascalCaseNamingConvention} from '../../../src/ts/naming-conventions/PascalCaseNamingConvention';
 import {CamelCaseNamingConvention} from '../../../src/ts/naming-conventions/CamelCaseNamingConvention';
-import {Profile} from '../../../src/ts/Profile';
-import automapper from '../../../src/ts/AutoMapper';
+import {Profile} from '../../../src/ts/profile';
+import automapper from '../../../src/ts/autoMapper';
 import {expect} from 'chai';
 
 class PascalCaseToCamelCaseMappingProfile extends Profile {

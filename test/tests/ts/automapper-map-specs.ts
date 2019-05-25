@@ -1,4 +1,4 @@
-import automapper from '../../../src/ts/AutoMapper';
+import automapper from '../../../src/ts/autoMapper';
 import {expect} from 'chai';
 
 describe('AutoMapper', () => {

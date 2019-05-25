@@ -9,7 +9,7 @@
     ISourceMemberConfigurationOptions,
     ISourceProperty
 } from './contracts';
-    import {AutoMapperHelper} from './AutoMapperHelper';
+    import {AutoMapperHelper} from './autoMapperHelper';
 
     type IFluentFunc = ICreateMapFluentFunctions;
     type IDMCO = IMemberConfigurationOptions;

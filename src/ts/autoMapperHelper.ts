@@ -1,6 +1,6 @@
 
 import {IDestinationTransformation, IMemberConfigurationOptions, IMemberMappingMetaData} from './contracts';
-import {DestinationTransformationType} from './AutoMapperEnumerations';
+import {DestinationTransformationType} from './autoMapperEnumerations';
 
 export class AutoMapperHelper {
     public static getClassName(classType: { new(): any } | undefined): string {

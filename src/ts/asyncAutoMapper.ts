@@ -8,8 +8,8 @@ import {
     IAsyncMapItemFunction,
     IMemberCallback, IDestinationProperty, IAsyncTransformCallback, IDestinationTransformation
 } from './contracts';
-import {AutoMapperBase} from './AutoMapperBase';
-import {DestinationTransformationType} from './AutoMapperEnumerations';
+import {AutoMapperBase} from './autoMapperBase';
+import {DestinationTransformationType} from './autoMapperEnumerations';
 
 
 type IDMCO = IMemberConfigurationOptions;
