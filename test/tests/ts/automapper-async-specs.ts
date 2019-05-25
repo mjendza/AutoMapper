@@ -1,21 +1,13 @@
-import {AutoMapper} from '../../../src/ts/autoMapper';
-import {AutoMapperHelper} from '../../../src/ts/autoMapperHelper';
-import * as chai from 'chai';
+import automapper from '../../../src/ts/autoMapper';
 import {expect} from 'chai';
 
 import {IMapCallback, IMemberCallback, IMemberConfigurationOptions, IResolutionContext, ISourceMemberConfigurationOptions} from '../../../src/ts/contracts';
 
-const automapper = AutoMapper.getInstance();
 
 describe('AutoMapper (asynchronous mapping)', () => {
     let postfix = ' [f0e5ef4a-ebe1-47c4-a3ff-48f8b5ae6ac7]';
 
-    beforeEach(() => {
-        // utils.registerTools(globalScope);
-        // utils.registerCustomMatchers(globalScope);
-    });
-
-    it('should be able to map asynchronous using forMember', (done: any) => {
+    it('should be able to map asynchronous using forMember', async () => {
         // arrange
         var objFrom = {prop: 'prop'};
 
@@ -39,14 +31,13 @@ describe('AutoMapper (asynchronous mapping)', () => {
                 return opts.intermediatePropertyValue + ' (sync)';
             });
 
-        automapper.mapAsync(fromKey, toKey, objFrom, (result: any) => {
+        return automapper.mapAsync(fromKey, toKey, objFrom, (result: any) => {
             // assert
-            expect(result.prop).to.be.equal(objFrom.prop + ' (async)' + ' (sync)');
-            done();
+            return expect(result.prop).to.be.equal(objFrom.prop + ' (async)' + ' (sync)');
         });
     });
 
-    it('should be able to map asynchronous using forMember in combination with a constant value', (done: () => void) => {
+    it('should be able to map asynchronous using forMember in combination with a constant value', async () => {
         // arrange
         var objFrom = {prop: 'prop'};
 
@@ -68,10 +59,9 @@ describe('AutoMapper (asynchronous mapping)', () => {
             })
             .forMember('prop', 'Async With Constant Value');
 
-        automapper.mapAsync(fromKey, toKey, objFrom, (result: any) => {
+        return automapper.mapAsync(fromKey, toKey, objFrom, (result: any) => {
             // assert
-            expect(result.prop).to.be.equal('Async With Constant Value');
-            done();
+            return expect(result.prop).to.be.equal('Async With Constant Value');
         });
     });
 
@@ -127,18 +117,7 @@ describe('AutoMapper (asynchronous mapping)', () => {
             .forMember('prop', (opts: IMemberConfigurationOptions) => {
                 return opts.intermediatePropertyValue + ' (sync)';
             });
-
-        // act
-        try {
-            var objB = automapper.map(fromKey, toKey, objFrom);
-        } catch (e) {
-            // assert
-            expect(e.message).to.be.equal('Impossible to use asynchronous mapping using automapper.map(); use automapper.mapAsync() instead.');
-            return;
-        }
-
-        // assert
-        expect(null).to.throw('Expected error was not raised.');
+        expect(automapper.map(fromKey, toKey, objFrom)).to.throw('Impossible to use asynchronous mapping using automapper.map(); use automapper.mapAsync() instead.');
     });
 
     it('should be able to map asynchronous using forSourceMember', (done: () => void) => {

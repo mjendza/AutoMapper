@@ -1,7 +1,7 @@
 import {IMemberCallback, IMemberConfigurationOptions, ISourceMemberConfigurationOptions} from '../../../src/ts/contracts';
 import automapper from '../../../src/ts/autoMapper';
 import {expect} from 'chai';
-import {AsyncAutoMapper} from '../../../dist/AsyncAutoMapper';
+import {AsyncAutoMapper} from '../../../src/ts/asyncAutoMapper';
 
 describe('AutoMapper - Currying support', () => {
 
