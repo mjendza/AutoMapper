@@ -1,19 +1,15 @@
-/// <reference path="../../../tools/typings/jasmine/jasmine.d.ts" />
-/// <reference path="../../typings/jasmine-utils.d.ts" />
+import {AutoMapper} from '../../../src/ts/AutoMapper';
+import {AutoMapperHelper} from '../../../src/ts/AutoMapperHelper';
+import * as chai from 'chai';
+import { expect } from 'chai';
 
-/// <reference path="../../../src/ts/AutoMapperHelper.ts" />
+import {IMemberConfigurationOptions, ISourceMemberConfigurationOptions} from '../../../src/ts/contracts';
 
-/// <reference path="../../../dist/automapper-classes.d.ts" />
-/// <reference path="../../../dist/automapper-interfaces.d.ts" />
-/// <reference path="../../../dist/automapper-declaration.d.ts" />
-
-var globalScope = this;
-
-module AutoMapperJs {
+const automapper = AutoMapper.getInstance();
     describe('AutoMapper', () => {
         beforeEach(() => {
-            utils.registerTools(globalScope);
-            utils.registerCustomMatchers(globalScope);
+            // utils.registerTools(globalScope);
+            // utils.registerCustomMatchers(globalScope);
 
             // clear mappings (please, don't try this at home!)
             for (var key in (<any>automapper)._mappings) {
@@ -85,12 +81,12 @@ module AutoMapperJs {
                     errorMessage.substr(0, errorMessage.indexOf('\'') + 1) +
                     errorMessage.substr(errorMessage.lastIndexOf('\''));
 
-                expect(dekeyedErrorMessage).toEqual(`Mapping '' cannot be validated, since mapping.sourceType or mapping.destinationType are unspecified.`);
+                expect(dekeyedErrorMessage).to.be.equal(`Mapping '' cannot be validated, since mapping.sourceType or mapping.destinationType are unspecified.`);
                 return;
             }
 
             // assert
-            expect(null).fail('Expected error was not raised.');
+            expect(null).to.throw('Expected error was not raised.');
         });
 
         it('should fail when auto mapping a property which does not exist on destination', () => {
@@ -108,14 +104,14 @@ module AutoMapperJs {
                 automapper.assertConfigurationIsValid(true);
             } catch (e) {
                 // assert
-                expect(e.message).toEqual(
+                expect(e.message).to.be.equal(
                     `Mapping '${srcName}=>${dstName}' is invalid: Source member 'prop' is configured to be mapped, ` +
                     `but does not exist on destination type (source: '${srcName}', destination: '${dstName}').`);
                 return;
             }
 
             // assert
-            expect(null).fail('Expected error was not raised.');
+            expect(null).to.throw('Expected error was not raised.');
         });
 
         it('should succeed when mapping objects with ignored properties not existing on the other side', () => {
@@ -150,12 +146,12 @@ module AutoMapperJs {
                 automapper.assertConfigurationIsValid(true);
             } catch (e) {
                 // assert
-                expect(e.message).toEqual(`Mapping '${srcName}=>${dstName}' is invalid: Destination member 'prop2' does not exist on source type (source: '${srcName}', destination: '${dstName}').`);
+                expect(e.message).to.be.equal(`Mapping '${srcName}=>${dstName}' is invalid: Destination member 'prop2' does not exist on source type (source: '${srcName}', destination: '${dstName}').`);
                 return;
             }
 
             // assert
-            expect(null).fail('Expected error was not raised.');
+            expect(null).to.throw('Expected error was not raised.');
         });
 
         it('should fail when providing configuration for a property which does not exist on destination', () => {
@@ -175,12 +171,12 @@ module AutoMapperJs {
                 automapper.assertConfigurationIsValid(true);
             } catch (e) {
                 // assert
-                expect(e.message).toEqual(`Mapping '${srcName}=>${dstName}' is invalid: Destination member 'prop3' is configured, but does not exist on destination type (source: '${srcName}', destination: '${dstName}').`);
+                expect(e.message).to.be.equal(`Mapping '${srcName}=>${dstName}' is invalid: Destination member 'prop3' is configured, but does not exist on destination type (source: '${srcName}', destination: '${dstName}').`);
                 return;
             }
 
             // assert
-            expect(null).fail('Expected error was not raised.');
+            expect(null).to.throw('Expected error was not raised.');
         });
 
         it('should fail when providing configuration for a property which does not exist on source', () => {
@@ -200,31 +196,31 @@ module AutoMapperJs {
                 automapper.assertConfigurationIsValid(true);
             } catch (e) {
                 // assert
-                expect(e.message).toEqual(`Mapping '${srcName}=>${dstName}' is invalid: Source member 'prop2' is configured, but does not exist on source type (source: '${srcName}', destination: '${dstName}').`);
+                expect(e.message).to.be.equal(`Mapping '${srcName}=>${dstName}' is invalid: Source member 'prop2' is configured, but does not exist on source type (source: '${srcName}', destination: '${dstName}').`);
                 return;
             }
 
             // assert
-            expect(null).fail('Expected error was not raised.');
+            expect(null).to.throw('Expected error was not raised.');
         });
     });
 
     class AssertConfigPropertiesProp {
-        prop: string = undefined; // TODO Wiki: properties are only available when initialized: http://stackoverflow.com/a/20534039/702357
+        public prop: string | undefined = undefined; // TODO Wiki: properties are only available when initialized: http://stackoverflow.com/a/20534039/702357
     }
 
     class AssertConfigPropertiesProp2 {
-        prop2: string = undefined;
+        public prop2: string | undefined = undefined;
     }
 
     class AssertConfigPropertiesPropProp2 {
-        prop: string = undefined;
-        prop2: string = undefined;
+        public prop: string | undefined = undefined;
+        public prop2: string | undefined = undefined;
     }
 
     class AssertConfigPropertiesNestedProp {
-        level1: any = {
+        public level1: any = {
             level2: undefined
-        }
+        };
     }
-}
+

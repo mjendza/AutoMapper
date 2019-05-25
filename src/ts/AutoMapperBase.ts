@@ -1,12 +1,16 @@
-/// <reference path="../../dist/automapper-interfaces.d.ts" />
-/// <reference path="TypeConverter.ts" />
-/// <reference path="AutoMapperHelper.ts" />
-/// <reference path="AutoMapperValidator.ts" />
-
-module AutoMapperJs {
-    'use strict';
 
     // interface shorthands
+    import {
+    ICreateMapFluentFunctions,
+    IDestinationProperty, IMapping,
+    IMemberCallback,
+    IMemberConfigurationOptions,
+    IProfile,
+    ISourceMemberConfigurationOptions,
+    ISourceProperty
+} from './contracts';
+    import {AutoMapperHelper} from './AutoMapperHelper';
+
     type IFluentFunc = ICreateMapFluentFunctions;
     type IDMCO = IMemberConfigurationOptions;
     type ISMCO = ISourceMemberConfigurationOptions;
@@ -23,9 +27,12 @@ module AutoMapperJs {
 
         public abstract createMap(sourceKeyOrType: string | (new () => any), destinationKeyOrType: string | (new () => any)): any;
 
-        protected getMapping(mappings: { [key: string]: IMapping }, sourceKey: stringOrClass, destinationKey: stringOrClass): IMapping {
+        protected getMapping(mappings: { [key: string]: IMapping } | undefined, sourceKey: stringOrClass, destinationKey: stringOrClass | undefined): IMapping {
             let srcKey = this.getKey(sourceKey);
             let dstKey = this.getKey(destinationKey);
+            if (!mappings) {
+                throw new Error(`mappings arg error`);
+            }
             let mapping: IMapping = mappings[srcKey + dstKey];
 
             if (!mapping) {
@@ -34,7 +41,7 @@ module AutoMapperJs {
             return mapping;
         }
 
-        protected getKey(keyStringOrType: string | (new () => any)): string {
+        protected getKey(keyStringOrType: string | (new () => any) | undefined): string {
             if (typeof keyStringOrType === 'string') {
                 return keyStringOrType;
             } else {
@@ -102,7 +109,7 @@ module AutoMapperJs {
             sourceObject: any,
             sourcePropertyName: string,
             destinationObject: any,
-            transformFunction: (destinationProperty: IDestinationProperty, memberOptions: IDMCO, callback?: IMemberCallback) => void,
+            transformFunction: (destinationProperty: IDestinationProperty | null, memberOptions: IDMCO, callback?: IMemberCallback) => void,
             autoMappingCallbackFunction?: (dstPropVal: any) => void): void {
 
             // TODO Property mappings are already located before
@@ -219,7 +226,7 @@ module AutoMapperJs {
 
         }
 
-        private getDestinationPropertyName(profile: IProfile, sourcePropertyName: string): string {
+        private getDestinationPropertyName(profile: IProfile | undefined, sourcePropertyName: string): string {
             if (!profile) {
                 return sourcePropertyName;
             }
@@ -229,6 +236,7 @@ module AutoMapperJs {
             try {
                 // First, split the source property name based on the splitting expression.
                 // TODO BL Caching of RegExp splitting!
+                // @ts-ignore
                 var sourcePropertyNameParts = sourcePropertyName.split(profile.sourceMemberNamingConvention.splittingExpression);
 
                 // NOTE BL For some reason, splitting by (my ;)) RegExp results in empty strings in the array; remove them.
@@ -238,6 +246,7 @@ module AutoMapperJs {
                     }
                 }
 
+                // @ts-ignore
                 return profile.destinationMemberNamingConvention.transformPropertyName(sourcePropertyNameParts);
             } catch (error) {
                 return sourcePropertyName;
@@ -258,7 +267,7 @@ module AutoMapperJs {
             propertyMapping: ISourceProperty,
             sourceObject: any,
             sourcePropertyName: string,
-            transformFunction: (destinationProperty: IDestinationProperty, memberOptions: IDMCO) => void): void {
+            transformFunction: (destinationProperty: IDestinationProperty | null, memberOptions: IDMCO) => void): void {
             if (propertyMapping.children && propertyMapping.children.length > 0) {
                 // always pass child source object, even if source object does not exist =>
                 // constant transformations should always pass.
@@ -297,4 +306,4 @@ module AutoMapperJs {
             return memberConfigurationOptions;
         }
     }
-}
+

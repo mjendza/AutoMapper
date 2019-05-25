@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="be2082ae-4462-4815-8580-894c2753d71e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/AutoMapper.TS.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/13aa1aa9-7d2d-4ff5-9467-b9416d0a6022.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/947c3d04-affd-4f90-bff9-ba316a421752.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/d2ff504e-32e4-49fd-a32b-3189e1d650f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/f6c948ed-4512-44a2-b9c7-2db3a6957464.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/processinfo/13aa1aa9-7d2d-4ff5-9467-b9416d0a6022.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/processinfo/947c3d04-affd-4f90-bff9-ba316a421752.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/processinfo/d2ff504e-32e4-49fd-a32b-3189e1d650f5.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/processinfo/f6c948ed-4512-44a2-b9c7-2db3a6957464.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.nyc_output/processinfo/index.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AsyncAutoMapper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AsyncAutoMapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperBase.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperBase.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperEnumerations.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperEnumerations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperHelper.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperHelper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperValidator.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/AutoMapperValidator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Profile.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/Profile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/TypeConverter.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/TypeConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/contracts.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/contracts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/naming-conventions/CamelCaseNamingConvention.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/naming-conventions/CamelCaseNamingConvention.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/naming-conventions/PascalCaseNamingConvention.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/naming-conventions/PascalCaseNamingConvention.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GulpFile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper-classes.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper-declaration.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper-interfaces.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/contracts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/automapper.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulp.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/samples/ts/configuration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/samples/ts/configuration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/AsyncAutoMapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/AsyncAutoMapper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/AutoMapper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/AutoMapper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/AutoMapperBase.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/AutoMapperBase.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/AutoMapperEnumerations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/AutoMapperEnumerations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/AutoMapperHelper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/AutoMapperHelper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/AutoMapperValidator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/AutoMapperValidator.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/Profile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/Profile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/TypeConverter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/TypeConverter.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/naming-conventions/CamelCaseNamingConvention.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/naming-conventions/CamelCaseNamingConvention.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/naming-conventions/PascalCaseNamingConvention.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/naming-conventions/PascalCaseNamingConvention.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/karma-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/scripts/jasmine-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/typings/jasmine-utils.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsd.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wallaby.js" beforeDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="342">
+              <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+              <folding>
+                <element signature="e#0#122#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.travis.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" selection-start-column="7" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1000">
+              <caret line="330" column="18" lean-forward="true" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#213#0" expanded="true" />
+                <element signature="n#PascalCaseToCamelCaseMappingProfile#0" />
+                <element signature="n#ForAllMembersMappingProfile#0" />
+                <element signature="n#ConvertUsingMappingProfile#0" />
+                <element signature="n#CamelCaseToPascalCaseMappingProfile#0" />
+                <element signature="n#ValidatedAgeMappingProfile#0" />
+                <element signature="n#ValidatedAgeMappingProfile2#0" />
+                <element signature="n#Person#0" />
+                <element signature="n#BeerBuyingYoungster#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/AutoMapper.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="96" column="35" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+              <folding>
+                <element signature="e#24#410#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/contracts.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="56">
+              <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ts/AutoMapperHelper.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-294">
+              <caret line="61" column="90" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="90" />
+              <folding>
+                <element signature="e#1#109#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/ts/configuration.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="665">
+              <caret line="78" selection-start-line="78" selection-end-line="78" />
+              <folding>
+                <element signature="e#0#102#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/samples/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1223" />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>flatmap-stream</find>
+      <find>AutoMapperHelper</find>
+      <find>registerTools</find>
+      <find>.toEqualData</find>
+      <find>to.be.deepequal</find>
+      <find>toBe</find>
+      <find>toEqual</find>
+      <find>..to.be.equal</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>.to.be.deep.equals</replace>
+      <replace>to.be.deep.equals</replace>
+      <replace>to.be.equal</replace>
+      <replace>.to.be.equal</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/ts/AutoMapperEnumerations.ts" />
+        <option value="$PROJECT_DIR$/src/ts/TypeConverter.ts" />
+        <option value="$PROJECT_DIR$/src/ts/naming-conventions/CamelCaseNamingConvention.ts" />
+        <option value="$PROJECT_DIR$/src/ts/naming-conventions/PascalCaseNamingConvention.ts" />
+        <option value="$PROJECT_DIR$/src/ts/AutoMapperValidator.ts" />
+        <option value="$PROJECT_DIR$/test/typings/jasmine-utils.d.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/contracts.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/Profile.ts" />
+        <option value="$PROJECT_DIR$/src/ts/AutoMapperBase.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/AsyncAutoMapper.ts" />
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/samples/ts/configuration.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/AutoMapperHelper.ts" />
+        <option value="$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts" />
+        <option value="$PROJECT_DIR$/src/ts/AutoMapper.ts" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+        <option value="$PROJECT_DIR$/.idea/AutoMapper.TS.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1097" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AutoMapper.TS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoMapper.TS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AutoMapper.TS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AutoMapper.TS" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs.mocha.mocha_node_package_dir" value="$PROJECT_DIR$/node_modules/mocha" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\mjendza\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="ts.external.directory.path" value="D:\DEV-MJ\AutoMapper.TS\node_modules\typescript\lib" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="npm.test">
+    <configuration name="coverage" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="coverage" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="AutoMapper" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts</test-file>
+      <test-names>
+        <name value="AutoMapper" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="AutoMapper.initialize" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>SUITE</test-kind>
+      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts</test-file>
+      <test-names>
+        <name value="AutoMapper.initialize" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="test\tests\ts\automapper-currying-specs.ts" type="mocha-javascript-test-runner" temporary="true" nameIsGenerated="true">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <mocha-package>$PROJECT_DIR$/node_modules/mocha</mocha-package>
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <ui>bdd</ui>
+      <extra-mocha-options>--require ts-node/register</extra-mocha-options>
+      <test-kind>TEST_FILE</test-kind>
+      <test-file>$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts</test-file>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Mocha.test\tests\ts\automapper-currying-specs.ts" />
+        <item itemvalue="Mocha.AutoMapper.initialize" />
+        <item itemvalue="Mocha.AutoMapper" />
+        <item itemvalue="npm.coverage" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="be2082ae-4462-4815-8580-894c2753d71e" name="Default Changelist" comment="" />
+      <created>1558505559807</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1558505559807</updated>
+      <workItem from="1558505561144" duration="25281000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="AutoMapper_createMap_forMember - 2019.05.23 at 10h 50m 38s.xml">
+      <configuration name="AutoMapper.createMap.forMember" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="AutoMapper_createMap_forMember - 2019.05.23 at 10h 51m 26s.xml">
+      <configuration name="AutoMapper.createMap.forMember" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="AutoMapper_createMap_forMember - 2019.05.23 at 10h 53m 24s.xml">
+      <configuration name="AutoMapper.createMap.forMember" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="AutoMapper_createMap_forMember - 2019.05.23 at 13h 59m 56s.xml">
+      <configuration name="AutoMapper.createMap.forMember" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_tests_ts_automapper-createmap-forsourcemember-specs_ts - 2019.05.23 at 14h 06m 35s.xml">
+      <configuration name="test\tests\ts\automapper-createmap-forsourcemember-specs.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_tests_ts_automapper-createmap-forsourcemember-specs_ts - 2019.05.23 at 14h 07m 30s.xml">
+      <configuration name="test\tests\ts\automapper-createmap-forsourcemember-specs.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="AutoMapper - 2019.05.23 at 22h 51m 01s.xml">
+      <configuration name="AutoMapper" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="AutoMapper_initialize - 2019.05.23 at 22h 51m 17s.xml">
+      <configuration name="AutoMapper.initialize" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="AutoMapper_initialize - 2019.05.23 at 22h 53m 52s.xml">
+      <configuration name="AutoMapper.initialize" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+    <history-entry file="test_tests_ts_automapper-currying-specs_ts - 2019.05.24 at 14h 54m 57s.xml">
+      <configuration name="test\tests\ts\automapper-currying-specs.ts" configurationId="mocha-javascript-test-runner" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="25281000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1804" height="982" extended-state="6" />
+    <layout>
+      <window_info id="Gulp" side_tool="true" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2494266" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32900944" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32900944" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6627358" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="PlantUML" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tslint.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulp.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1324" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GulpFile.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="14" lean-forward="true" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="15" column="16" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dist/automapper-interfaces.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5233">
+          <caret line="278" column="14" selection-start-line="278" selection-start-column="14" selection-end-line="278" selection-end-column="14" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/AutoMapperEnumerations.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/TypeConverter.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/Profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-583">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/naming-conventions/CamelCaseNamingConvention.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-203">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/naming-conventions/PascalCaseNamingConvention.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/AutoMapperValidator.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="752">
+          <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+          <folding>
+            <element signature="e#55#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/js/automapper-helper-specs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/AutoMapper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="630" column="58" selection-start-line="630" selection-start-column="34" selection-end-line="630" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="209">
+            <caret line="11" column="43" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="43" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/typings/jasmine-utils.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="7" selection-start-line="14" selection-end-line="14" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-async-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="349" column="47" selection-start-line="349" selection-start-column="47" selection-end-line="349" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-assertconfig-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="3" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@types/chai/index.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="182" column="19" selection-start-line="182" selection-start-column="19" selection-end-line="182" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-formember-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-forsourcemember-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/Profile.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
+          <folding>
+            <element signature="e#85#168#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/AutoMapperBase.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="249" column="23" selection-start-line="249" selection-start-column="23" selection-end-line="249" selection-end-column="23" />
+          <folding>
+            <element signature="e#33#257#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/performance-tests/ts/mapping-framework.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/TypeConverter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-228" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-createmap-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="3" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/AsyncAutoMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/scripts/jasmine-utils.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma.conf.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/karma-test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsd.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wallaby.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/performance-tests/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1717" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/lib/highlight.pack.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/lib/sample-scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/js/configuration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1427">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/ts/configuration.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="665">
+          <caret line="78" selection-start-line="78" selection-end-line="78" />
+          <folding>
+            <element signature="e#0#102#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/samples/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1223" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.travis.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="11" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/contracts.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/AutoMapperHelper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="61" column="90" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="90" />
+          <folding>
+            <element signature="e#1#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-initialize-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1000">
+          <caret line="330" column="18" lean-forward="true" selection-start-line="330" selection-start-column="18" selection-end-line="330" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#213#0" expanded="true" />
+            <element signature="n#PascalCaseToCamelCaseMappingProfile#0" />
+            <element signature="n#ForAllMembersMappingProfile#0" />
+            <element signature="n#ConvertUsingMappingProfile#0" />
+            <element signature="n#CamelCaseToPascalCaseMappingProfile#0" />
+            <element signature="n#ValidatedAgeMappingProfile#0" />
+            <element signature="n#ValidatedAgeMappingProfile2#0" />
+            <element signature="n#Person#0" />
+            <element signature="n#BeerBuyingYoungster#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ts/AutoMapper.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="96" column="35" lean-forward="true" selection-start-line="96" selection-start-column="35" selection-end-line="96" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#410#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-currying-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="23" lean-forward="true" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/tests/ts/automapper-map-specs.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="38" column="3" lean-forward="true" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

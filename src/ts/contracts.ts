@@ -1,26 +1,17 @@
-// [bundle remove start]
-// Type definitions for AutoMapper.js 1.9.0
-// Project: https://github.com/loedeman/AutoMapper
-// Definitions by: Bert Loedeman <https://github.com/loedeman>
-// Definitions: https://github.com/borisyankov/DefinitelyTyped
-
-declare module AutoMapperJs {
-// [bundle remove end]
-
     // [v1.8]
-    interface IProperty { // TODO Rename!
+    export interface IProperty { // TODO Rename!
         name: string;
         sourcePropertyName: string;
         destinationPropertyName: string;
         level: number;
     }
 
-    interface ISourceProperty extends IProperty {
+    export interface ISourceProperty extends IProperty {
         children: ISourceProperty[];
-        destination: IDestinationProperty;
+        destination: IDestinationProperty | null;
     }
 
-    interface IDestinationTransformation {
+    export interface IDestinationTransformation {
         transformationType: number; // Ideal: AutoMapperJs.DestinationTransformationType (but not as easy as it appears to be);
         constant?: any;
         memberConfigurationOptionsFunc?: (opts: IMemberConfigurationOptions) => void;
@@ -29,15 +20,15 @@ declare module AutoMapperJs {
         asyncSourceMemberConfigurationOptionsFunc?: (opts: ISourceMemberConfigurationOptions, cb: IMemberCallback) => void;
     }
 
-    interface IDestinationProperty extends IProperty {
-        child: IDestinationProperty;
+    export interface IDestinationProperty extends IProperty {
+        child?: IDestinationProperty;
         transformations: IDestinationTransformation[];
-        conditionFunction: (sourceObject: any) => boolean;
+        conditionFunction?: (sourceObject: any) => boolean;
         ignore: boolean;
         sourceMapping: boolean; // TODO is this still necessary?
     }
 
-    interface ICreateMapForMemberParameters {
+    export interface ICreateMapForMemberParameters {
         mapping: IMapping;
         propertyName: string;
         transformation: any;
@@ -47,7 +38,7 @@ declare module AutoMapperJs {
 
     // [/v1.8]
 
-    interface IPropertyOld {
+    export interface IPropertyOld {
         name: string;
         metadata: IPropertyMetadata;
         level: number;
@@ -60,7 +51,7 @@ declare module AutoMapperJs {
         conditionFunction?: (sourceObject: any) => boolean;
     }
 
-    interface IPropertyMetadata {
+    export interface IPropertyMetadata {
         mapping: IMapping;
         root: IPropertyOld;
         parent: IPropertyOld;
@@ -68,25 +59,25 @@ declare module AutoMapperJs {
         destinationCount: number;
     }
 
-    interface IPropertyDestinationMetadata {
+    export interface IPropertyDestinationMetadata {
         source: IPropertyOld;
         destination: IPropertyOld;
     }
 
-    interface IMemberMappingMetaData {
+    export interface IMemberMappingMetaData {
         destination: string;
         source: string;
         transformation: IDestinationTransformation;
         sourceMapping: boolean;
         ignore: boolean;
         async: boolean;
-        condition: (sourceObject: any) => boolean;
+        condition?: (sourceObject: any) => boolean;
     }
 
     /**
      * Member mapping properties.
      */
-    interface IForMemberMapping {
+    export interface IForMemberMapping {
         /** The source member property name. */
         sourceProperty: string;
         /** The destination member property name parts for nested property support (e.g. 'type.name'). */
@@ -99,7 +90,7 @@ declare module AutoMapperJs {
         ignore: boolean;
         /** Whether or not this member mapping has an asynchronous mapping function. */
         async: boolean;
-        /** 
+        /**
          * The object will only be mapped when the condition is met.
          * @param {any} sourceObject The source object to check.
          * @returns {boolean}
@@ -110,7 +101,7 @@ declare module AutoMapperJs {
     /**
      * Interface for returning an object with available 'sub' functions to enable method chaining (e.g. automapper.createMap().forMember().forMember() ...)
      */
-    interface ICreateMapFluentFunctions {
+    export interface ICreateMapFluentFunctions {
         /**
          * Customize configuration for an individual destination member.
          * @param sourceProperty The destination member property name.
@@ -118,8 +109,8 @@ declare module AutoMapperJs {
          * @returns {IAutoMapperCreateMapChainingFunctions}
          */
         forMember: (sourceProperty: string, valueOrFunction: any |
-                     ((opts: IMemberConfigurationOptions) => any) |
-                     ((opts: IMemberConfigurationOptions, cb: IMemberCallback) => void)) => ICreateMapFluentFunctions;
+            ((opts: IMemberConfigurationOptions) => any) |
+            ((opts: IMemberConfigurationOptions, cb: IMemberCallback) => void)) => ICreateMapFluentFunctions;
 
         /**
          * Customize configuration for an individual source member.
@@ -129,8 +120,8 @@ declare module AutoMapperJs {
          */
         forSourceMember: (sourceProperty: string,
                           sourceMemberConfigFunction: ((opts: ISourceMemberConfigurationOptions) => any) |
-                                                      ((opts: ISourceMemberConfigurationOptions, cb: IMemberCallback) => void)
-                         ) => ICreateMapFluentFunctions;
+                              ((opts: ISourceMemberConfigurationOptions, cb: IMemberCallback) => void)
+        ) => ICreateMapFluentFunctions;
 
         /**
          * Customize configuration for all destination members.
@@ -149,10 +140,10 @@ declare module AutoMapperJs {
          * @param typeConverterClassOrFunction The converter class or function to use when converting.
          */
         convertUsing: (typeConverterClassOrFunction: ((resolutionContext: IResolutionContext) => any) |
-                                                     ((resolutionContext: IResolutionContext, callback: IMapCallback) => void) |
-                                                     ITypeConverter |
-                                                     (new() => ITypeConverter)
-                      ) => void;
+            ((resolutionContext: IResolutionContext, callback: IMapCallback) => void) |
+            ITypeConverter |
+            (new() => ITypeConverter)
+        ) => void;
 
         /**
          * Specify to which class type AutoMapper should convert. When specified, AutoMapper will create an instance of the given type, instead of returning a new object literal.
@@ -172,7 +163,7 @@ declare module AutoMapperJs {
     /**
      * The mapping configuration for the current mapping keys/types.
      */
-    interface IMapping {
+    export interface IMapping {
         /** The mapping source key. */
         sourceKey: string;
 
@@ -191,7 +182,7 @@ declare module AutoMapperJs {
          * @returns {any} Destination object.
          */
         typeConverterFunction: ((resolutionContext: IResolutionContext) => any) |
-                               ((resolutionContext: IResolutionContext, callback: IMapCallback) => void);
+            ((resolutionContext: IResolutionContext, callback: IMapCallback | undefined) => void);
 
         /** The source type class to convert from. */
         sourceTypeClass: any;
@@ -243,7 +234,7 @@ declare module AutoMapperJs {
         arrayIndex?: number;
     }
 
-    interface IMappingConfigurationOptions {
+    export interface IMappingConfigurationOptions {
         /** The source object to map. */
         sourceObject: any;
 
@@ -251,7 +242,7 @@ declare module AutoMapperJs {
         sourcePropertyName: string;
 
         /**
-         * The intermediate destination property value, used for stacking multiple for(Source)Member calls 
+         * The intermediate destination property value, used for stacking multiple for(Source)Member calls
          * while elaborating the intermediate result.
          */
         intermediatePropertyValue: any;
@@ -260,7 +251,7 @@ declare module AutoMapperJs {
     /**
      * Configuration options for forMember mapping function.
      */
-    interface IMemberConfigurationOptions extends ISourceMemberConfigurationOptions {
+    export interface IMemberConfigurationOptions extends ISourceMemberConfigurationOptions {
         /**
          * Map from a custom source property name.
          * @param sourcePropertyName The source property to map.
@@ -276,7 +267,7 @@ declare module AutoMapperJs {
     /**
      * Configuration options for forSourceMember mapping function.
      */
-    interface ISourceMemberConfigurationOptions extends IMappingConfigurationOptions {
+    export interface ISourceMemberConfigurationOptions extends IMappingConfigurationOptions {
         /**
          * When this configuration function is used, the property is ignored
          * when mapping.
@@ -287,7 +278,7 @@ declare module AutoMapperJs {
     /**
      * Member callback interface
      */
-    interface IMemberCallback {
+    export interface IMemberCallback {
         /**
          * Callback function to call when the async operation is executed.
          * @param {any} callbackValue Callback value to be used as output for the for(Source)Member call.
@@ -298,7 +289,7 @@ declare module AutoMapperJs {
     /**
      * Member callback interface
      */
-    interface IAsyncTransformCallback {
+    export interface IAsyncTransformCallback {
         /**
          * Callback function to call when the async operation is executed.
          * @param {any} callbackValue Callback value to be used as output for the for(Source)Member call.
@@ -310,7 +301,7 @@ declare module AutoMapperJs {
     /**
      * Member callback interface
      */
-    interface IMapCallback {
+    export interface IMapCallback {
         /**
          * Callback function to call when the async operation is executed.
          * @param {any} result Callback value to be used as output for the mapAsync call.
@@ -379,17 +370,17 @@ declare module AutoMapperJs {
      */
     export interface IProfile {
         /** Profile name */
-        profileName: string;
+        profileName: string| undefined;
 
         /** Naming convention for source members */
-        sourceMemberNamingConvention: INamingConvention;
+        sourceMemberNamingConvention: INamingConvention| undefined;
 
         /** Naming convention for destination members */
-        destinationMemberNamingConvention: INamingConvention;
+        destinationMemberNamingConvention: INamingConvention| undefined;
 
         /**
          * Implement this method in a derived class and call the CreateMap method to associate that map with this profile.
-         * Avoid calling the AutoMapper class / automapper instance from this method. 
+         * Avoid calling the AutoMapper class / automapper instance from this method.
          */
         configure: () => void;
     }
@@ -399,10 +390,10 @@ declare module AutoMapperJs {
     }
 
     export interface IAsyncMapItemFunction {
-        (mapping: IMapping, sourceObject: any, destinationObject: any, callback: IMapCallback): void;
+        (mapping: IMapping, sourceObject: any, destinationObject: any, callback: IMapCallback | undefined): void;
     }
 
-    interface ICreateMapParameters {
+    export interface ICreateMapParameters {
         mapping: IMapping;
         destinationProperty: string;
         conversionValueOrFunction: any;
@@ -410,7 +401,7 @@ declare module AutoMapperJs {
         fluentFunctions: ICreateMapFluentFunctions;
     }
 
-    interface IGetOrCreatePropertyParameters {
+    export interface IGetOrCreatePropertyParameters {
         propertyNameParts: string[];
         mapping: IMapping;
         parent?: IPropertyOld;
@@ -419,11 +410,10 @@ declare module AutoMapperJs {
         sourceMapping: boolean;
     }
 
-    interface ICreatePropertyParameters {
+    export interface ICreatePropertyParameters {
         name: string;
         mapping: IMapping;
         parent: IPropertyOld;
         propertyArray: IPropertyOld[];
         sourceMapping: boolean;
     }
-}
